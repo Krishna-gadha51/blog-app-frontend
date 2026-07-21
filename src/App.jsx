@@ -5,8 +5,9 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import SignUp from './components/SignUp'
 import SignIn from './components/SignIn'
-import Create from './components/Create'
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Create from './components/Create'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,8 +17,11 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<SignIn/>}/>
+      
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/create' element={<Create/>}/>
+      
+      
       </Routes>
       </BrowserRouter>
     </>
