@@ -75,7 +75,7 @@ else if (response.data.status === "email id not found") {
                             <button type="button" className="btn btn-success mt-3" onClick={readValue}>SignIn</button>
                         </div>
                         <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
-                            <a href="/" className="btn btn-secondary" >New users click here</a>
+                            <a href="/signup" className="btn btn-secondary" >New users click here</a>
                         </div>
                     </div>
                 </div>
