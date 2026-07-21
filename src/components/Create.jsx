@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import NavBar from "./NavBar";
 
 const Create = () => {
   const token = sessionStorage.getItem("token");
@@ -52,7 +53,9 @@ const Create = () => {
   };
 
   return (
-    <div className="container mt-5">
+    
+    <div className="container mt-4">
+      <NavBar/>
       <div className="row justify-content-center">
         <div className="col-md-6">
 
