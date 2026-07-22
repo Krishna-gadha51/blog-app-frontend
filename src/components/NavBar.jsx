@@ -1,11 +1,20 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const NavBar = () => {
+
+
+  const navigate=useNavigate()
+
+  const LogOut=()=>{
+    sessionStorage.clear()
+    navigate("/")
+  }
   return (
     <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <a className="navbar-brand" href="#">Blog App</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -18,8 +27,12 @@ const NavBar = () => {
           <a className="nav-link" href="/viewall">View all</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">View my Post</a>
+          <a className="nav-link" href="/viewpost">View my Post</a>
         </li>
+        <li className="nav-item">
+          <button className="btn btn-success" onClick={LogOut}>Log Out</button>
+        </li>
+
         
       </ul>
     </div>
