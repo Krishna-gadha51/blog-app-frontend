@@ -9,6 +9,7 @@ import SignIn from './components/SignIn'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Create from './components/Create'
 import ViewAll from './components/ViewAll'
+import ViewPost from './components/ViewPost'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/create' element={<Create/>}/>
       <Route path='/viewall' element={<ViewAll/>}/>
+      <Route path='/viewpost' element={<ViewPost/>}/>
       
       
       </Routes>
